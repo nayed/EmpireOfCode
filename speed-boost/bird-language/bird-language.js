@@ -3,8 +3,8 @@
 var VOWELS = "aeiouy"
 
 function translate(phrase) {
-    i = 0
-    trad = ""
+    var i = 0
+    var trad = ""
     while (i < phrase.length){
         if (phrase[i] == ' '){
             trad += phrase[i]
