@@ -19,7 +19,7 @@ countIngots("C1,D1,B1,E1,F1") == 140
 
 **Precondition**:
 
-report match with regexp expression "[A-Z][1-9] (,[A-Z][1-9])*"
+report match with regexp expression "[A-Z][1-9]"
 
 **How it is used**:
 
