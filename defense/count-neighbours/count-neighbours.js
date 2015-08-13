@@ -11,13 +11,13 @@ function countNeighbours(grid, row, col){
 
     var locationRow =  {
         'NW': [row - 1], 'N': [row - 1], 'NE': [row - 1],
-        'W': [row], 'E': [row],
+        'W' : [row],                      'E': [row],
         'SW': [row + 1], 'S': [row + 1], 'SE': [row + 1]
     }
 
     var locationCol = {
         'NW': [col - 1], 'N': [col], 'NE': [col + 1],
-        'W': [col - 1], 'E': [col + 1],
+        'W' : [col - 1],              'E': [col + 1],
         'SW': [col - 1], 'S': [col], 'SE': [col + 1]
     }
 
