@@ -4,10 +4,10 @@ function countUnits(number) {
     var binary = number.toString(2)
     var sNumber = binary.toString()
     var output = []
-    for (var i = 0; i < sNumber.length; i++){
+    for (var i = 0; i < sNumber.length; i++) {
         output.push(+sNumber.charAt(i))
         var sum = 0
-        for (var z = 0; z < output.length; z++){
+        for (var z = 0; z < output.length; z++) {
             sum += output[z]
         }
     }

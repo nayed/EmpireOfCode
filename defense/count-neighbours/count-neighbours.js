@@ -26,7 +26,7 @@ function countNeighbours(grid, row, col) {
             if ((keyRow === keyCol) && (locationRow[keyRow] >= 0) 
                 && (locationCol[keyCol] >= 0) && (grid[locationRow[keyRow]]) 
                 && grid[locationRow[keyRow]][locationCol[keyCol]]) {
-                    //console.log(keyRow) if you want to know the positions of your enemies
+                    // console.log(keyRow) if you want to know the positions of your enemies
                     enemies += grid[locationRow[keyRow]][locationCol[keyCol]]
             }
         }

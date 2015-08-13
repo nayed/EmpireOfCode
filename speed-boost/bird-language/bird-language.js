@@ -5,11 +5,11 @@ var VOWELS = "aeiouy"
 function translate(phrase) {
     var i = 0
     var trad = ""
-    while (i < phrase.length){
-        if (phrase[i] == ' '){
+    while (i < phrase.length) {
+        if (phrase[i] == ' ') {
             trad += phrase[i]
             i++
-        } else if (/[aeiouy/]+/.test(phrase.charAt(i))){
+        } else if (/[aeiouy/]+/.test(phrase.charAt(i))) {
             trad += phrase.charAt(i)
             i += 3
         } else {

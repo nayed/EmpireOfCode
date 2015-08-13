@@ -2,7 +2,7 @@
 
 function fizzBuzz(number) {
     var response = ""
-    if ((number % 3 === 0) && (number % 5 === 0)){
+    if ((number % 3 === 0) && (number % 5 === 0)) {
         response = "Fizz Buzz"
     } else if (number % 3 === 0) {
         response = "Fizz"
