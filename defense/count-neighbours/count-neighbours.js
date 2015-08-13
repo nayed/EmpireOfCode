@@ -1,3 +1,5 @@
+// THIS CHALLENGE TOOK ME LIKE 7H, I'M SO PROUD OF ME I WANNA CRY
+
 "use strict"
 
 function countNeighbours(grid, row, col){
