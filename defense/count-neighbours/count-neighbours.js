@@ -6,10 +6,10 @@
 
 "use strict"
 
-function countNeighbours(grid, row, col){
+function countNeighbours(grid, row, col) {
     var enemies = 0
 
-    var locationRow =  {
+    var locationRow = {
         'NW': [row - 1], 'N': [row - 1], 'NE': [row - 1],
         'W' : [row],                      'E': [row],
         'SW': [row + 1], 'S': [row + 1], 'SE': [row + 1]
@@ -26,6 +26,7 @@ function countNeighbours(grid, row, col){
             if ((keyRow === keyCol) && (locationRow[keyRow] >= 0) 
                 && (locationCol[keyCol] >= 0) && (grid[locationRow[keyRow]]) 
                 && grid[locationRow[keyRow]][locationCol[keyCol]]) {
+                    //console.log(keyRow) if you want to know the positions of your enemies
                     enemies += grid[locationRow[keyRow]][locationCol[keyCol]]
             }
         }
