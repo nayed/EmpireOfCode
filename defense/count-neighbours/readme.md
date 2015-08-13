@@ -72,12 +72,12 @@ For the first example, the coordinates of the cell are (1, 2) and as we can see 
 **Example**:
 
 ```javascript
-count_neighbours([[1, 0, 0, 1, 0],
+countNeighbours([[1, 0, 0, 1, 0],
                   [0, 1, 0, 0, 0],
                   [0, 0, 1, 0, 1],
                   [1, 0, 0, 0, 0],
                   [0, 0, 1, 0, 0]], 1, 2) == 3
-count_neighbours([[1, 0, 0, 1, 0],
+countNeighbours([[1, 0, 0, 1, 0],
                   [0, 1, 0, 0, 0],
                   [0, 0, 1, 0, 1],
                   [1, 0, 0, 0, 0],
