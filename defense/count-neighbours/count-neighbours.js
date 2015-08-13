@@ -47,4 +47,10 @@ if (!global.is_checking) {
     assert.equal(countNeighbours([[0, 0, 0],
                                   [0, 1, 0],
                                   [0, 0, 0]], 1, 1), 0, "Single")
+    assert.equal(countNeighbours([[1, 0, 1, 0, 1], 
+                                  [0, 1, 0, 1, 0], 
+                                  [1, 0, 1, 0, 1], 
+                                  [0, 1, 0, 1, 0], 
+                                  [1, 0, 1, 0, 1], 
+                                  [0, 1, 0, 1, 0]], 5, 4), 2, "That one's hard")
 }
