@@ -18,10 +18,12 @@ The word "**Buzz**" if the number is divisible by 5,
 
 **Example**:
 
+```javascript
 fizzBuzz(15) === "Fizz Buzz"  
 fizzBuzz(6) === "Fizz"  
 fizzBuzz(5) === "Buzz"  
 fizzBuzz(7) === "7"  
+```
 
 **Precondition**:
 

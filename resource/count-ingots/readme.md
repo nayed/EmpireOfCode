@@ -16,14 +16,16 @@ Here we can see two consignments with 2 (A2) and 10 (B1) ingots, giving us a res
 
 **Example**:
 
+```javascript
 countIngots("A2,B1") == 12  
 countIngots("A1,A1,A1") == 3  
 countIngots("Z9,X8,Y7") == 672  
 countIngots("C1,D1,B1,E1,F1") == 140  
+```
 
 **Precondition**:
 
-report match with regexp expression "[A-Z][1-9]"
+report match with regexp expression `[A-Z][1-9](,[A-Z][1-9])*`
 
 **How it is used**:
 

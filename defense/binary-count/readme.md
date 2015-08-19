@@ -12,10 +12,12 @@ You are given a positive integer as a number, and you need to convert it to the 
 
 **Example**:
 
+```javascript
 countUnits(4) == 1  
 countUnits(15) == 4  
 countUnits(1) == 1  
 countUnits(1022) == 9  
+```
 
 **Precondition**:
 
