@@ -1,6 +1,6 @@
 "use strict"
 
-function commonWords(first, second){
+function commonWords(first, second) {
     var arrFirst = first.split(",")
     var arrSecond = second.split(",")
     var arrCommon = []
