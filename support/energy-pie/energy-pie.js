@@ -2,7 +2,7 @@
 
 // http://jonisalonen.com/2012/converting-decimal-numbers-to-ratios/
 function float2rat(x) {
-    var tolerance = 1.0E-6
+    var tolerance = 1.0E-13
     var h1 = 1
     var h2 = 0
     var k1 = 0
@@ -17,6 +17,7 @@ function float2rat(x) {
         k1 = a * k1 + k2
         k2 = aux
         b = 1 / (b - a)
+        //console.log(Math.abs(x - h1 / k1), x * tolerance)
     } while (Math.abs(x - h1 / k1) > x * tolerance)
 
     return  h1 + "/" + k1
@@ -34,24 +35,23 @@ function dividePie(groups) {
         return robots
     })
     groups.map(function(grp) {
-        if (grp === groups[0]) {
+        if (energy === null) {
             if (grp < 0)
                 grp = Math.abs(grp)
             energy = grp / robots
             energy = 1 - energy
         }
-        else if (grp === groups[1]) {
-            if (grp < 0)
-                grp = Math.abs(grp)
-            energy = (energy) - (grp * (energy / robots))
-        }
         else {
-            if (grp < 0)
+            if (grp < 0) {
                 grp = Math.abs(grp)
-            energy = energy - grp / robots
+                energy = (energy) - (grp * (energy / robots))
+            }
+            else {
+                energy = energy - grp / robots
+            }
         }
-        console.log(energy)
     })
+    console.log(energy)
     rep = float2rat(energy)
     remain = rep.split("/")
     remain = remain.map(function(nb) {
@@ -60,8 +60,10 @@ function dividePie(groups) {
     })
     return remain
 }
-
-console.log(dividePie([2, -1, 3]))
+//console.log(2682139399739 / 14362129722368)
+//console.log(float2rat(2682139399739 / 14362129722368))
+console.log(dividePie([15, 33, 37, 16, -1, 22, -73, 66, -59, 10, -39, 57]))
+// [2682139399739,14362129722368]
 
 /*var assert = require("assert")
 
